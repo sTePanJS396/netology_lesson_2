@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Toolbar start... */
+.toolbar, .project {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.toolbar-list {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.toolbar-list-item {
+  max-width: 100%;
+  list-style: none;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.toolbar-list-item-button {
+  max-width: 100%;
+  border: 1px solid #8f8986;
+  border-radius: 7px;
+  background-color: #fff;
+  color: #873416;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.active-item {
+  background-color: rgba(45, 173, 23, 0.4);
+  color: #0419d4 !important;
+  border: 1px solid #f740b7 !important;
+  border-radius: 7px !important;
+}
+/* Toolbar end... */
+
+/* Project list start... */
+.project {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+.project-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  gap: 10px;
+}
+
+.project-list-item {
+  list-style: none;
+}
+
+.project-list-item > img {
+  width: 100%;
+  height: 100%;
+}
+/* Project list end... */
