@@ -9,7 +9,7 @@ class Portfolio extends Component {
   constructor(props) {
     super(props);
     this.dataArray = arraysProject();
-    this.state = {filterName: 'All', filtersArr: [...this.dataArray], arrayForRender: []};
+    this.state = {filterName: 'All', filtersArr: [...this.dataArray]};
   }
 
   arrayFilteringFunction(filterName) {
